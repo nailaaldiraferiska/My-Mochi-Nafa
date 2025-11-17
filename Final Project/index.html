@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Mochi - Kue Tradisional Jepang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles jika diperlukan */
+        .hero-bg {
+            background-image:(); /* Ganti dengan gambar mochi */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+    <!-- Header dengan Navbar (Flexbox) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-pink-600">Toko Mochi Nafa</div>
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="hover:text-pink-600">Beranda</a></li>
+                <li><a href="#produk" class="hover:text-pink-600">Produk</a></li>
+                <li><a href="#kontak" class="hover:text-pink-600">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="hero" class="hero-bg h-96 flex items-center justify-center text-center text-white">
+            <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+                <h1 class="text-4xl font-bold mb-4">Selamat Datang di Toko Mochi Nafa</h1>
+                <p class="text-lg mb-6">Nikmati kue mochi tradisional Jepang yang lembut dan lezat.</p>
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <img src="imgg/mochi.png" alt="Mochi Strawberry" class="w-full h-40 object-cover rounded mb-4">
+                        <a href="#produk" class="bg-pink-600 px-6 py-2 rounded hover:bg-pink-700">Lihat Produk</a>
+                    </div>
+                
+            </div>
+        </section>
+
+        <!-- Section 2: Produk (Grid Layout) -->
+        <section id="produk" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Produk Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <img src="imgg/straww.jpg" alt="Mochi Strawberry" class="w-full h-48 object-cover rounded mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Mochi Strawberry</h3>
+                        <p class="mb-4">Mochi dengan isian stroberi segar.</p>
+                        <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Beli Sekarang</a>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <img src="imgg/matcha.jpg" alt="Mochi Matcha" class="w-full h-48 object-cover rounded mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Mochi Matcha</h3>
+                        <p class="mb-4">Mochi hijau dengan rasa matcha autentik dengan isian Strawberry.</p>
+                        <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Beli Sekarang</a>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <img src="imgg/chocolate.jpg" alt="Mochi Chocolate" class="w-full h-48 object-cover rounded mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Mochi Chocolate</h3>
+                        <p class="mb-4">Mochi cokelat yang manis dan meleleh serta strawberry yang segar.</p>
+                        <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Kontak -->
+        <section id="kontak" class="py-16 bg-pink-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Hubungi Kami</h2>
+                <form class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="nama" class="block text-sm font-medium mb-2">Nama</label>
+                        <input type="text" id="nama" class="w-full px-3 py-2 border rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-3 py-2 border rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label for="pesan" class="block text-sm font-medium mb-2">Pesan</label>
+                        <textarea id="pesan" class="w-full px-3 py-2 border rounded"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Kirim</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Toko Mochi Nafa. Semua hak dilindungi.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-pink-400">Facebook</a>
+                <a href="#" class="hover:text-pink-400">Instagram</a>
+                <a href="#" class="hover:text-pink-400">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
